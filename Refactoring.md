@@ -9,3 +9,8 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+First of all, I'm prefer to use a common function to handle the hashing.
+The code is better understood because there are different functions with different responsibilities. For example, `createHashBasedOnEvent` is just called when event exist. So all the logic based on event hashing live inside this function.
+
+Also, there is less if statements and the function tries to returns faster.

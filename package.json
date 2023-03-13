@@ -2,14 +2,20 @@
   "name": "cbh-take-home-project",
   "version": "1.0.0",
   "description": "",
-  "main": " ",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "start": "node index.js"
+    "test": "vitest",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "coverage": "vitest run --coverage"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.1.0"
+    "@vitest/coverage-c8": "^0.29.2",
+    "consola": "^2.15.3",
+    "nodemon": "^2.0.21",
+    "vitest": "^0.29.2"
   }
 }
