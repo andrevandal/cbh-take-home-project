@@ -16,3 +16,12 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+To allow the user provide a custom agent id, we'll need to create a table to handle their relationship.
+-> [Ticket 1]: Create a table to create called `facilities_to_custom_agents` with the facility id, agent id, and the custom agent id. (effort eta: low)
+
+After, we'll need to provide a way to user make these assingments.
+-> [Ticket 2]: Create an API/UI to allow facilities to assing custom ids to their agents. (effort eta: high)
+
+With all these steps done, we can refator the current implementation to prefer to use the custom ids for whom provided them.
+-> [Ticket 3]: Refactor the `getShiftsByFacility` function to prefer to use the custom id saved in the facility table to get the real agent id if available. (effort eta: medium)
